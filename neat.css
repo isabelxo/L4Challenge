@@ -1,0 +1,36 @@
+li {
+  position: relative;
+  left: 10px;
+}
+ul {
+  word-spacing: 60px;
+}
+
+.card {
+  width: 100%;
+}
+
+.container {
+  margin-top: 50px;
+}
+.badge {
+  border-radius: 40px;
+  color: white;
+}
+
+.form {
+  margin-top: 0 auto;
+  left: 30px;
+  position: relative;
+}
+
+.badge {
+  border: 1px solid grey;
+  color: grey;
+}
+
+.ms-auto {
+  position: relative;
+  top: -85px;
+  right: 30px;
+}
