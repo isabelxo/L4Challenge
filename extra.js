@@ -44,16 +44,22 @@ function displayWeather(response) {
     response.data.weather[0].description;
 }
 
-function changeCity(event) {
-  event.preventDefault();
+function search(city) {
   let apiKey = "84919b6ce50d5f3343257ed5591f46ea";
   let apiEnd = `https://api.openweathermap.org/data/2.5/weather`;
-  let units = "metric";
-  let city = document.querySelector("#search-button").value;
+  let units = "imperial";
   let apiUrl = `${apiEnd}?q=${city}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(displayWeather);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-button").value;
+  search(city);
+}
+
 let cityForm = document.querySelector("#search-form");
-cityForm.addEventListener("submit", changeCity);
+cityForm.addEventListener("submit", handleSubmit);
+
+search("Pueblo");
