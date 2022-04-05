@@ -34,3 +34,8 @@ ul {
   top: -85px;
   right: 30px;
 }
+
+.feature-card-footer {
+  margin-bottom: -28px;
+  right: 10px;
+}
